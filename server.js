@@ -90,7 +90,7 @@ app.get('/weather/city', (req, res) => {
         .then(res => res.json())
         .then(json => {
             res.send(json)
-            console.log('get /weather/city ok');
+            console.log('get /weather/city');
         })
         .catch(err => res.send(err));
 })
@@ -105,7 +105,7 @@ app.get('/weather/coordinates', (req, res) => {
         .then(res => res.json())
         .then(json => {
             res.send(json);
-            console.log('get /weather/coordinates ok');
+            console.log('get /weather/coordinates');
         })
         .catch(err => res.send(err));
 })
